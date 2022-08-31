@@ -21,7 +21,7 @@
             app:elevation="0dp">
 
             <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+                android:id="@+id/goHome_Nilai"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
                 app:navigationIcon="@drawable/ic_arrow">
@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_centerInParent="true"
-                    android:text="@string/menu_dua"
+                    android:text="@string/menu_tiga"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -59,16 +59,17 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp">
 
                     <TextView
                         android:id="@+id/textNama"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
-                        android:text="@string/menu_dua_nama"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/menu_tiga_nama"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -79,8 +80,8 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:layout_toEndOf="@id/textNama"
-                        android:textColor="@android:color/background_dark"
                         android:inputType="textPersonName"
+                        android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         tools:ignore="LabelFor" />
@@ -101,16 +102,17 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp">
 
                     <TextView
                         android:id="@+id/textNIM"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
-                        android:text="@string/menu_dua_nim"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/menu_tiga_nim"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -121,8 +123,8 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:layout_toEndOf="@id/textNIM"
-                        android:textColor="@android:color/background_dark"
                         android:inputType="number"
+                        android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         tools:ignore="LabelFor" />
@@ -143,16 +145,17 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp">
 
                     <TextView
                         android:id="@+id/textUAS"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
-                        android:text="@string/menu_dua_uas"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/menu_tiga_uas"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -185,16 +188,17 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp">
 
                     <TextView
                         android:id="@+id/textUTS"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
-                        android:text="@string/menu_dua_uts"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/menu_tiga_uts"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -227,16 +231,17 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp">
 
                     <TextView
                         android:id="@+id/textTugas"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
-                        android:text="@string/menu_dua_tugas"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/menu_tiga_tugas"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -295,7 +300,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/daftarHasil"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="30dp"
                 app:cardElevation="3dp"
@@ -303,10 +308,10 @@
                 app:strokeWidth="3dp">
 
                 <RelativeLayout
-                    android:id="@+id/hasilDaftar"
+                    android:id="@+id/hasilHitung_Nilai"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="32dp">
+                    android:layout_marginVertical="20dp">
 
                     <!--Hasil Nama-->
                     <TextView
@@ -317,7 +322,7 @@
                         android:layout_marginStart="15dp"
                         android:text="@string/hasil_nama"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/hasilNama"
@@ -326,7 +331,7 @@
                         android:layout_toEndOf="@id/isiNama"
                         android:layout_marginStart="5dp"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <!--Hasil NIM-->
@@ -340,7 +345,7 @@
                         android:layout_marginStart="15dp"
                         android:text="@string/hasil_nim"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/hasilNIM"
@@ -350,7 +355,7 @@
                         android:layout_toEndOf="@id/isiNIM"
                         android:layout_marginStart="5dp"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <!--Hasil UAS-->
@@ -363,7 +368,7 @@
                         android:layout_below="@id/isiNIM"
                         android:text="@string/hasil_uas"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/hasilUAS"
@@ -373,7 +378,7 @@
                         android:layout_toEndOf="@id/isiUAS"
                         android:layout_marginStart="5dp"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                     <!--Hasil UTS-->
                     <TextView
@@ -385,7 +390,7 @@
                         android:layout_below="@id/hasilUAS"
                         android:text="@string/hasil_uts"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/hasilUTS"
@@ -395,7 +400,7 @@
                         android:layout_toEndOf="@id/isiUTS"
                         android:layout_marginStart="5dp"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <!--Hasil Tugas-->
@@ -408,7 +413,7 @@
                         android:layout_below="@id/isiUTS"
                         android:text="@string/hasil_tugas"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/hasilTugas"
@@ -418,7 +423,7 @@
                         android:layout_toEndOf="@id/isiTugas"
                         android:layout_marginStart="5dp"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <!--Hasil Total-->
@@ -431,7 +436,7 @@
                         android:layout_marginStart="15dp"
                         android:text="@string/hasil_total"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/hasilTotal"
@@ -441,7 +446,7 @@
                         android:layout_toEndOf="@id/isiTotal"
                         android:layout_marginStart="5dp"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <!--Hasil Rerata-->
@@ -454,7 +459,7 @@
                         android:layout_marginStart="15dp"
                         android:text="@string/hasil_rerata"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/hasilRerata"
@@ -464,7 +469,7 @@
                         android:layout_toEndOf="@id/isiRerata"
                         android:layout_marginStart="5dp"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <!--Hasil Kriteria-->
@@ -477,7 +482,7 @@
                         android:layout_marginStart="15dp"
                         android:text="@string/hasil_kriteria"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/hasilKriteria"
@@ -487,7 +492,7 @@
                         android:layout_toEndOf="@id/isiKriteria"
                         android:layout_marginStart="5dp"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <!--Hasil Status-->
@@ -500,7 +505,7 @@
                         android:layout_marginStart="15dp"
                         android:text="@string/hasil_status"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/hasilStatus"
@@ -510,7 +515,7 @@
                         android:layout_toEndOf="@id/isiStatus"
                         android:layout_marginStart="5dp"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>

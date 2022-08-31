@@ -1,20 +1,34 @@
 <resources>
-    <string name="app_name">chapter3topic1</string>
+    <string name="app_name">Kalkulator Sederhana</string>
+    <!--Button Default-->
     <string name="btn_hitung">Hitung</string>
     <string name="btn_reset">Reset</string>
-    <string name="menu_dua">Kalkulator Nilai Siswa</string>
-    <string name="menu_dua_nama">Nama\t\t\t\t\t\t\t:</string>
-    <string name="menu_dua_nim">NIM\t\t\t\t\t\t\t\t\t:</string>
-    <string name="menu_dua_uas">Nilai UAS\t\t\t\t:</string>
-    <string name="menu_dua_uts">Nilai UTS\t\t\t\t:</string>
-    <string name="menu_dua_tugas">Nilai Tugas\t\t:</string>
-    <string name="hasil_nama">Nama Mahasiswa\t\t:</string>
-    <string name="hasil_nim">NIM\t\t\t\t\t\t\t\t\t\t\t\t\t:</string>
-    <string name="hasil_uas">UAS\t\t\t\t\t\t\t\t\t\t\t\t\t:</string>
-    <string name="hasil_uts">UTS\t\t\t\t\t\t\t\t\t\t\t\t\t:</string>
-    <string name="hasil_tugas">Tugas\t\t\t\t\t\t\t\t\t\t\t:</string>
-    <string name="hasil_total">Total\t\t\t\t\t\t\t\t\t\t\t\t:</string>
-    <string name="hasil_rerata">Rata - Rata Nilai\t\t\t:</string>
-    <string name="hasil_kriteria">Nilai Huruf\t\t\t\t\t\t\t\t:</string>
-    <string name="hasil_status">Status\t\t\t\t\t\t\t\t\t\t\t:</string>
+
+    <!--Menu Kalkulator BMI-->
+    <string name="menu_dua">Kalkulator BMI</string>
+    <string name="menu_dua_umur">Umur :</string>
+    <string name="menu_dua_tinggi">Tinggi Badan :</string>
+    <string name="menu_dua_berat">Berat Badan :</string>
+    <string name="hasil_umur">Umur Anda :</string>
+    <string name="hasil_tinggi">Tinggi :</string>
+    <string name="hasil_berat">Berat Badan :</string>
+    <string name="hasil_bmi">BMI Anda :</string>
+    <string name="hasil_kategori">Kategori :</string>
+
+    <!--Menu Kalkulator Nilai Siswa-->
+    <string name="menu_tiga">Kalkulator Nilai Siswa</string>
+    <string name="menu_tiga_nama">Nama :</string>
+    <string name="menu_tiga_nim">NIM :</string>
+    <string name="menu_tiga_uas">Nilai UAS :</string>
+    <string name="menu_tiga_uts">Nilai UTS :</string>
+    <string name="menu_tiga_tugas">Nilai Tugas :</string>
+    <string name="hasil_nama">Nama Mahasiswa :</string>
+    <string name="hasil_nim">NIM :</string>
+    <string name="hasil_uas">UAS :</string>
+    <string name="hasil_uts">UTS :</string>
+    <string name="hasil_tugas">Tugas :</string>
+    <string name="hasil_total">Total :</string>
+    <string name="hasil_rerata">Rata - Rata Nilai :</string>
+    <string name="hasil_kriteria">Nilai Huruf :</string>
+    <string name="hasil_status">Status :</string>
 </resources>
