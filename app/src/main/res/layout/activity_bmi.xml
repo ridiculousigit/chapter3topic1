@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BMIActivity">
+
+    <TextView
+        android:id="@+id/textJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator BMI"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/textUmur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Umur              :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <EditText
+        android:id="@+id/editUmur"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toEndOf="@+id/textUmur"
+        app:layout_constraintTop_toBottomOf="@+id/textJudul"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textInfoUmur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="tahun"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editUmur"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <TextView
+        android:id="@+id/textTB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Tinggi Badan :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUmur"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTB"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textTB"
+        app:layout_constraintTop_toBottomOf="@+id/editUmur"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <TextView
+        android:id="@+id/textInfoTB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="cm"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTB"
+        app:layout_constraintTop_toBottomOf="@+id/textInfoUmur"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textBB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Berat Badan   :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTB"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <EditText
+        android:id="@+id/editBB"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textBB"
+        app:layout_constraintTop_toBottomOf="@+id/editTB"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textInfoBB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:text="kg"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editBB"
+        app:layout_constraintTop_toBottomOf="@+id/textInfoTB"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="36dp"
+        android:text="Hitung"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editBB"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="72dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnHitung"
+        app:layout_constraintTop_toBottomOf="@+id/editBB"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="HASIL :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHitung"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textPreUmur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Umur Anda :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHasil"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <TextView
+        android:id="@+id/textPreTB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Tinggi :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPreUmur"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textPreBB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Berat Badan :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPreTB"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textPreBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=" BMI Anda :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPreBB"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textPreKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Kategori :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPreBMI"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textHasilUmur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toEndOf="@+id/textPreUmur"
+        app:layout_constraintTop_toBottomOf="@+id/textHasil"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <TextView
+        android:id="@+id/textHasilTB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toEndOf="@+id/textPreTB"
+        app:layout_constraintTop_toBottomOf="@+id/textHasilUmur"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textHasilBB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toEndOf="@+id/textPreBB"
+        app:layout_constraintTop_toBottomOf="@+id/textHasilTB"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textHasilBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toEndOf="@+id/textPreBMI"
+        app:layout_constraintTop_toBottomOf="@+id/textHasilBB"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textHasilKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toEndOf="@+id/textPreKategori"
+        app:layout_constraintTop_toBottomOf="@+id/textHasilBMI"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
