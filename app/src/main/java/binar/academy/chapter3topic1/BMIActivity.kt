@@ -13,18 +13,21 @@ class BMIActivity : AppCompatActivity() {
 
         // Tombol Kembali ke MainActivity
         goHome_BMI.setOnClickListener {
+
             var menu = Intent(this, MainActivity :: class.java)
             startActivity(menu)
+
         }
 
         // Tombol Hitung BMI
         btn_hitungBMI.setOnClickListener {
 
+            var umur = editUmur.text.toString()
             var tinggiBadan = editTB.text.toString()
             var beratBadan = editBB.text.toString()
             var BMI = hitungBMI(tinggiBadan.toDouble(), beratBadan.toDouble())
 
-            hasilUmur.text = "${editUmur.text} tahun"
+            hasilUmur.text = "$umur tahun"
             hasilTB.text = "$tinggiBadan cm"
             hasilBB.text = "$beratBadan kg"
             hasilBMI.text = String.format("%.1f", BMI)
@@ -53,7 +56,7 @@ class BMIActivity : AppCompatActivity() {
     fun kategoriBerat(BMI: Double):String {
 
         val kategori: String
-        if (BMI < 16 && BMI > 0) {
+        if (BMI >= 0 && BMI < 16) {
             kategori = "Terlalu Kurus"
         } else if (BMI >= 16 && BMI <= 17) {
             kategori = "Cukup Kurus"
@@ -72,10 +75,12 @@ class BMIActivity : AppCompatActivity() {
         } else kategori = "Wah ! Mulai perhatikan pola makananmu ya :)"
 
         return kategori
+
     }
 
     // Method untuk Tombol Reset BMI
-    fun reset(){
+    fun reset() {
+
         editUmur.setText("")
         editTB.setText("")
         editBB.setText("")
@@ -85,5 +90,6 @@ class BMIActivity : AppCompatActivity() {
         hasilBB.text = ""
         hasilBMI.text = ""
         hasilKategori.text = ""
+
     }
 }
