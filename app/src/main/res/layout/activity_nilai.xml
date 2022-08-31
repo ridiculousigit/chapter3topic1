@@ -7,6 +7,7 @@
     android:background="@android:color/white"
     android:fitsSystemWindows="true">
 
+    <!--Header Bar-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -70,7 +71,7 @@
                         android:text="@string/menu_dua_nama"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        android:textStyle="bold"  />
+                        android:textStyle="bold" />
 
                     <EditText
                         android:id="@+id/editNama"
@@ -112,7 +113,7 @@
                         android:text="@string/menu_dua_nim"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        android:textStyle="bold"  />
+                        android:textStyle="bold" />
 
                     <EditText
                         android:id="@+id/editNIM"
@@ -154,7 +155,7 @@
                         android:text="@string/menu_dua_uas"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        android:textStyle="bold"  />
+                        android:textStyle="bold" />
 
                     <EditText
                         android:id="@+id/editUAS"
@@ -196,7 +197,7 @@
                         android:text="@string/menu_dua_uts"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        android:textStyle="bold"  />
+                        android:textStyle="bold" />
 
                     <EditText
                         android:id="@+id/editUTS"
@@ -238,7 +239,7 @@
                         android:text="@string/menu_dua_tugas"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        android:textStyle="bold"  />
+                        android:textStyle="bold" />
 
                     <EditText
                         android:id="@+id/editTugas"
@@ -513,7 +514,6 @@
                         android:textStyle="bold" />
 
                 </RelativeLayout>
-
 
             </com.google.android.material.card.MaterialCardView>
 
