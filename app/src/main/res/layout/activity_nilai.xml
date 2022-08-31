@@ -40,6 +40,7 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
+        <!--Kolom Masukkan Data-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -47,6 +48,7 @@
             android:layout_marginTop="20dp"
             android:orientation="vertical">
 
+            <!--Data Nama-->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/dataNama"
                 android:layout_width="match_parent"
@@ -90,6 +92,7 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+            <!--Data NIM-->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/dataNIM"
                 android:layout_width="match_parent"
@@ -133,6 +136,7 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+            <!--Data Nilai UAS-->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/dataUAS"
                 android:layout_width="match_parent"
@@ -176,6 +180,7 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+            <!--Data Nilai UTS-->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/dataUTS"
                 android:layout_width="match_parent"
@@ -219,6 +224,7 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+            <!--Data Nilai Tugas-->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/dataTugas"
                 android:layout_width="match_parent"
@@ -262,6 +268,7 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+            <!--Tombol Hitung & Reset-->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/dataNilai"
                 android:layout_width="match_parent"
@@ -272,6 +279,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+                    <!--Tombol Hitung-->
                     <Button
                         android:id="@+id/btn_hitungNilai"
                         android:layout_width="180dp"
@@ -283,6 +291,7 @@
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
+                    <!--Tombol Reset-->
                     <Button
                         android:id="@+id/btn_resetNilai"
                         android:layout_width="180dp"
@@ -297,6 +306,7 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+            <!--Tampilan Hasil-->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/daftarHasil"
                 android:layout_width="match_parent"
@@ -328,8 +338,8 @@
                         android:id="@+id/hasilNama"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/isiNama"
                         android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@id/isiNama"
                         android:textColor="@android:color/background_dark"
                         android:textSize="16sp"
                         android:textStyle="bold" />
