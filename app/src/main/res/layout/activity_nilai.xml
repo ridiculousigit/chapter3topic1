@@ -86,7 +86,8 @@
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        tools:ignore="LabelFor" />
+                        tools:ignore="LabelFor"
+                        android:autofillHints="" />
 
                 </RelativeLayout>
 
@@ -130,7 +131,8 @@
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        tools:ignore="LabelFor" />
+                        tools:ignore="LabelFor"
+                        android:autofillHints="" />
 
                 </RelativeLayout>
 
@@ -174,7 +176,8 @@
                         android:inputType="numberDecimal"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        tools:ignore="LabelFor" />
+                        tools:ignore="LabelFor"
+                        android:autofillHints="" />
 
                 </RelativeLayout>
 
@@ -218,7 +221,8 @@
                         android:inputType="numberDecimal"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        tools:ignore="LabelFor" />
+                        tools:ignore="LabelFor"
+                        android:autofillHints="" />
 
                 </RelativeLayout>
 
@@ -262,7 +266,8 @@
                         android:inputType="numberDecimal"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        tools:ignore="LabelFor" />
+                        tools:ignore="LabelFor"
+                        android:autofillHints="" />
 
                 </RelativeLayout>
 

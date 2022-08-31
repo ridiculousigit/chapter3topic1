@@ -27,8 +27,8 @@ class NilaiActivity : AppCompatActivity() {
             val uasMahasiswa = editUAS.text.toString()
             val utsMahasiswa = editUTS.text.toString()
             val tugasMahasiswa = editTugas.text.toString()
-            val hitungTotal = hitunghitungTotal(uasMahasiswa.toDouble(), utsMahasiswa.toDouble(), tugasMahasiswa.toDouble())
-            val rerata = hitungRerata(hitungTotal)
+            val total = hitungTotal(uasMahasiswa.toDouble(), utsMahasiswa.toDouble(), tugasMahasiswa.toDouble())
+            val rerata = hitungRerata(total)
             val kriteria = kriteriaNilai(rerata)
             val kategori = kategoriNilai(kriteria)
 
@@ -37,7 +37,7 @@ class NilaiActivity : AppCompatActivity() {
             hasilUAS.text = uasMahasiswa
             hasilUTS.text = utsMahasiswa
             hasilTugas.text = tugasMahasiswa
-            hasilTotal.text = String.format("%.0f", rerata)
+            hasilTotal.text = String.format("%.0f", total)
             hasilRerata.text = String.format("%.1f", rerata)
             hasilKriteria.text = kriteria
             hasilStatus.text = kategori
@@ -54,7 +54,7 @@ class NilaiActivity : AppCompatActivity() {
     }
 
     // Method Perhitungan Total
-    private fun hitunghitungTotal(UAS : Double, UTS : Double, Tugas : Double) : Double {
+    private fun hitungTotal(UAS : Double, UTS : Double, Tugas : Double) : Double {
 
         return UAS + UTS + Tugas
 

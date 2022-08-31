@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
@@ -22,13 +23,14 @@
                 android:layout_gravity="bottom"
                 android:background="@drawable/bg_bottom_rounded"
                 android:gravity="center_vertical"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
-                    android:text="Chapter 3 - Topic 1"
+                    android:text="@string/judul_aplikasi"
                     android:textColor="@android:color/white"
                     android:textSize="32sp"
                     android:textStyle="bold" />
@@ -38,7 +40,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginBottom="30dp"
-                    android:text="Activity dan Activity Life Cycle"
+                    android:text="@string/sub_judul_aplikasi"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -75,7 +77,8 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
                         android:padding="15dp"
-                        android:src="@drawable/ic_calculator" />
+                        android:src="@drawable/ic_calculator"
+                        android:contentDescription="@string/info_menu_satu" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -83,7 +86,7 @@
                         android:layout_centerInParent="true"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@id/icKalkulator"
-                        android:text="Kalkulator"
+                        android:text="@string/menu_pertama"
                         android:textColor="@android:color/background_dark"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -113,7 +116,8 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
                         android:padding="15dp"
-                        android:src="@drawable/ic_bmi" />
+                        android:src="@drawable/ic_bmi"
+                        android:contentDescription="@string/info_menu_dua" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -121,7 +125,7 @@
                         android:layout_centerInParent="true"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@id/icBMI"
-                        android:text="Kalkulator BMI"
+                        android:text="@string/menu_kedua"
                         android:textColor="@android:color/background_dark"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -152,7 +156,8 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
                         android:padding="15dp"
-                        android:src="@drawable/ic_score" />
+                        android:src="@drawable/ic_score"
+                        android:contentDescription="@string/info_menu_tiga" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -160,7 +165,7 @@
                         android:layout_centerInParent="true"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@id/icNilai"
-                        android:text="Kalkulator Nilai Siswa"
+                        android:text="@string/menu_ketiga"
                         android:textColor="@android:color/background_dark"
                         android:textSize="25sp"
                         android:textStyle="bold" />
