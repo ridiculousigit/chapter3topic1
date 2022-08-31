@@ -4,11 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Projects/AndroidStudioProjects/chapter3topic1/app/src/main/res/drawable/bg_bottom_rounded.xml" value="0.122" />
+        <entry key="..\:/Projects/AndroidStudioProjects/chapter3topic1/app/src/main/res/drawable/ic_arrow.xml" value="0.124" />
         <entry key="..\:/Projects/AndroidStudioProjects/chapter3topic1/app/src/main/res/layout/activity_bmi.xml" value="0.536" />
         <entry key="..\:/Projects/AndroidStudioProjects/chapter3topic1/app/src/main/res/layout/activity_bmiactivity.xml" value="0.27447916666666666" />
         <entry key="..\:/Projects/AndroidStudioProjects/chapter3topic1/app/src/main/res/layout/activity_home.xml" value="0.4" />
         <entry key="..\:/Projects/AndroidStudioProjects/chapter3topic1/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Projects/AndroidStudioProjects/chapter3topic1/app/src/main/res/layout/activity_nilai.xml" value="0.18333333333333332" />
+        <entry key="..\:/Projects/AndroidStudioProjects/chapter3topic1/app/src/main/res/layout/activity_nilai.xml" value="0.27447916666666666" />
       </map>
     </option>
   </component>

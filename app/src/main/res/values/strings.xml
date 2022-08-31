@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">chapter3topic1</string>
+    <string name="btn_hitung">Hitung</string>
+    <string name="btn_reset">Reset</string>
+    <string name="menu_dua">Kalkulator Nilai Siswa</string>
+    <string name="menu_dua_nama">Nama\t\t\t\t\t\t\t:</string>
+    <string name="menu_dua_nim">NIM\t\t\t\t\t\t\t\t\t:</string>
+    <string name="menu_dua_uas">Nilai UAS\t\t\t\t:</string>
+    <string name="menu_dua_uts">Nilai UTS\t\t\t\t:</string>
+    <string name="menu_dua_tugas">Nilai Tugas\t\t:</string>
+    <string name="hasil_nama">Nama Mahasiswa\t\t:</string>
+    <string name="hasil_nim">NIM\t\t\t\t\t\t\t\t\t\t\t\t\t:</string>
+    <string name="hasil_uas">UAS\t\t\t\t\t\t\t\t\t\t\t\t\t:</string>
+    <string name="hasil_uts">UTS\t\t\t\t\t\t\t\t\t\t\t\t\t:</string>
+    <string name="hasil_tugas">Tugas\t\t\t\t\t\t\t\t\t\t\t:</string>
+    <string name="hasil_total">Total\t\t\t\t\t\t\t\t\t\t\t\t:</string>
+    <string name="hasil_rerata">Rata - Rata Nilai\t\t\t:</string>
+    <string name="hasil_kriteria">Nilai Huruf\t\t\t\t\t\t\t\t:</string>
+    <string name="hasil_status">Status\t\t\t\t\t\t\t\t\t\t\t:</string>
 </resources>

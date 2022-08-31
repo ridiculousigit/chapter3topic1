@@ -1,9 +1,524 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NilaiActivity">
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/warna_tiga">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/barHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/warna_satu"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:navigationIcon="@drawable/ic_arrow">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/menu_dua"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/barHeader"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/dataNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="3dp"
+                app:strokeColor="@color/warna_empat"
+                app:strokeWidth="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textNama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/menu_dua_nama"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold"  />
+
+                    <EditText
+                        android:id="@+id/editNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@id/textNama"
+                        android:textColor="@android:color/background_dark"
+                        android:inputType="textPersonName"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="LabelFor" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/dataNIM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="3dp"
+                app:strokeColor="@color/warna_empat"
+                app:strokeWidth="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textNIM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/menu_dua_nim"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold"  />
+
+                    <EditText
+                        android:id="@+id/editNIM"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@id/textNIM"
+                        android:textColor="@android:color/background_dark"
+                        android:inputType="number"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="LabelFor" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/dataUAS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="3dp"
+                app:strokeColor="@color/warna_empat"
+                app:strokeWidth="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textUAS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/menu_dua_uas"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold"  />
+
+                    <EditText
+                        android:id="@+id/editUAS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@id/textUAS"
+                        android:textColor="@android:color/background_dark"
+                        android:inputType="numberDecimal"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="LabelFor" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/dataUTS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="3dp"
+                app:strokeColor="@color/warna_empat"
+                app:strokeWidth="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textUTS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/menu_dua_uts"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold"  />
+
+                    <EditText
+                        android:id="@+id/editUTS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@id/textUTS"
+                        android:textColor="@android:color/background_dark"
+                        android:inputType="numberDecimal"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="LabelFor" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/dataTugas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="3dp"
+                app:strokeColor="@color/warna_empat"
+                app:strokeWidth="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textTugas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/menu_dua_tugas"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold"  />
+
+                    <EditText
+                        android:id="@+id/editTugas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@id/textTugas"
+                        android:textColor="@android:color/background_dark"
+                        android:inputType="numberDecimal"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="LabelFor" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/dataNilai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btn_hitungNilai"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/warna_lima"
+                        android:text="@string/btn_hitung"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_resetNilai"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/warna_enam"
+                        android:text="@string/btn_reset"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/daftarHasil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="3dp"
+                app:strokeColor="@color/warna_empat"
+                app:strokeWidth="3dp">
+
+                <RelativeLayout
+                    android:id="@+id/hasilDaftar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="32dp">
+
+                    <!--Hasil Nama-->
+                    <TextView
+                        android:id="@+id/isiNama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/hasil_nama"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hasilNama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/isiNama"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <!--Hasil NIM-->
+                    <TextView
+                        android:id="@+id/isiNIM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/isiNama"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/hasil_nim"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hasilNIM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hasilNama"
+                        android:layout_toEndOf="@id/isiNIM"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <!--Hasil UAS-->
+                    <TextView
+                        android:id="@+id/isiUAS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/isiNIM"
+                        android:text="@string/hasil_uas"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hasilUAS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hasilNIM"
+                        android:layout_toEndOf="@id/isiUAS"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp" />
+
+                    <!--Hasil UTS-->
+                    <TextView
+                        android:id="@+id/isiUTS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/hasilUAS"
+                        android:text="@string/hasil_uts"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hasilUTS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/isiUAS"
+                        android:layout_toEndOf="@id/isiUTS"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <!--Hasil Tugas-->
+                    <TextView
+                        android:id="@+id/isiTugas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/isiUTS"
+                        android:text="@string/hasil_tugas"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hasilTugas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hasilUTS"
+                        android:layout_toEndOf="@id/isiTugas"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <!--Hasil Total-->
+                    <TextView
+                        android:id="@+id/isiTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/isiTugas"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/hasil_total"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hasilTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hasilTugas"
+                        android:layout_toEndOf="@id/isiTotal"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <!--Hasil Rerata-->
+                    <TextView
+                        android:id="@+id/isiRerata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/isiTotal"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/hasil_rerata"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hasilRerata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hasilTotal"
+                        android:layout_toEndOf="@id/isiRerata"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <!--Hasil Kriteria-->
+                    <TextView
+                        android:id="@+id/isiKriteria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/isiRerata"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/hasil_kriteria"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hasilKriteria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hasilRerata"
+                        android:layout_toEndOf="@id/isiKriteria"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <!--Hasil Status-->
+                    <TextView
+                        android:id="@+id/isiStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/isiKriteria"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/hasil_status"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hasilStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hasilKriteria"
+                        android:layout_toEndOf="@id/isiStatus"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
