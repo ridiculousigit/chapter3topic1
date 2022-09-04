@@ -3,6 +3,8 @@ package binar.academy.chapter3topic1
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import binar.academy.chapter3topic1.topic2.BMI2Activity
+import binar.academy.chapter3topic1.topic2.HasilActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,8 +19,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Menu Pertama - Kalkulator BMI
-        menuBMI.setOnClickListener {
+        /*menuBMI.setOnClickListener {
             val menu = Intent(this, BMIActivity :: class.java)
+            startActivity(menu)
+        }*/
+
+        menuBMI.setOnClickListener {
+            val menu = Intent(this, BMI2Activity :: class.java)
             startActivity(menu)
         }
 

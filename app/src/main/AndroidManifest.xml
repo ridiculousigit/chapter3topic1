@@ -14,6 +14,12 @@
         android:theme="@style/Theme.Chapter3topic1"
         tools:targetApi="31">
         <activity
+            android:name=".topic2.BMI2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".topic2.HasilActivity"
+            android:exported="false" />
+        <activity
             android:name=".BasicActivity"
             android:exported="false" />
         <activity

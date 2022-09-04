@@ -6,6 +6,7 @@
     <string name="sub_judul_aplikasi">Activity dan Activity Life Cycle</string>
     <string name="menu_pertama">Kalkulator Sederhana</string>
     <string name="menu_kedua">Kalkulator BMI</string>
+    <string name="menu_kedua_evo">Kalkulator BMI versi TOPIC 2</string>
     <string name="menu_ketiga">Kalkulator Nilai Siswa</string>
     <string name="info_menu_satu">Menu Pertama</string>
     <string name="info_menu_dua">Menu Kedua</string>
@@ -15,6 +16,10 @@
     <string name="btn_hitung">Hitung</string>
     <string name="btn_tambah">Tambah</string>
     <string name="btn_reset">Reset</string>
+    <string name="btn_intent">Intent</string>
+    <string name="btn_bundle">Bundle</string>
+    <string name="btn_serializable">Serializable</string>
+    <string name="btn_parcelable">Parcelable</string>
 
     <!--Menu Kalkulator-->
     <string name="menu_satu">Kalkulator Sederhana</string>
@@ -24,6 +29,7 @@
 
     <!--Menu Kalkulator BMI-->
     <string name="menu_dua">Kalkulator BMI</string>
+    <string name="menu_dua_evo">Kalkulator BMI versi TOPIC 2</string>
     <string name="menu_dua_umur">Umur :</string>
     <string name="menu_dua_tinggi">Tinggi Badan :</string>
     <string name="menu_dua_berat">Berat Badan :</string>
